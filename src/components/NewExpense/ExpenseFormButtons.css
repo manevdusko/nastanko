@@ -1,0 +1,9 @@
+.new-expense__actions_container {
+  display: flex;
+  justify-content: end;
+}
+
+.new-expense__actions_center_container {
+  display: flex;
+  justify-content: center;
+}
