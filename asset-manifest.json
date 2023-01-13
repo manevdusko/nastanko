@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nastanko/static/css/main.86f484a1.css",
+    "main.js": "/nastanko/static/js/main.e055c7d0.js",
+    "index.html": "/nastanko/index.html",
+    "main.86f484a1.css.map": "/nastanko/static/css/main.86f484a1.css.map",
+    "main.e055c7d0.js.map": "/nastanko/static/js/main.e055c7d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f484a1.css",
+    "static/js/main.e055c7d0.js"
+  ]
+}
