@@ -4,7 +4,11 @@ import "./ExpensesList.css";
 
 const ExpensesList = (props) => {
   if (props.items.length === 0) {
-    return <h2 className="expense-list__fallback">Found no expenses.</h2>;
+    return (
+      <h2 className="expense-list__fallback">
+        Нема настани за избраниот град.
+      </h2>
+    );
   }
   return (
     <ul className="expenses-list">

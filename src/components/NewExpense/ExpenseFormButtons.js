@@ -6,16 +6,16 @@ const ExpenseFormButtons = (props) => {
   return props.isFormClosed ? (
     <div className="new-expense__actions_center_container">
       <div className="new-expense__actions">
-        <button onClick={openForm}>Add New Expense</button>
+        <button onClick={openForm}>Додај настан</button>
       </div>
     </div>
   ) : (
     <div className="new-expense__actions_container">
       <div className="new-expense__actions">
-        <button onClick={closeForm}>Cancel</button>
+        <button onClick={closeForm}>Исклучи</button>
       </div>
       <div className="new-expense__actions">
-        <button type="submit">Add Expense</button>
+        <button type="submit">Додај настан</button>
       </div>
     </div>
   );

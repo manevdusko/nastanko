@@ -31,13 +31,48 @@ const ExpenseForm = (props) => {
   };
 
   const [isFormClosed, setIsFormClosed] = useState(true);
-
+  const citiez = [
+    "Берово",
+    "Битола",
+    "Богданци",
+    "Валандово",
+    "Велес",
+    "Виница",
+    "Гевгелија",
+    "Гостивар",
+    "Дебар",
+    "Делчево",
+    "Демир Капија",
+    "Демир Хисар",
+    "Кавадарци",
+    "Кичево",
+    "Кочани",
+    "Кратово",
+    "Крива Паланка",
+    "Крушево",
+    "Куманово",
+    "Македонска Каменица",
+    "Македонски Брод",
+    "Неготино",
+    "Охрид",
+    "Пехчево",
+    "Прилеп",
+    "Пробиштип",
+    "Радовиш",
+    "Ресен",
+    "Свети Николе",
+    "Скопје",
+    "Струга",
+    "Струмица",
+    "Тетово",
+    "Штип",
+  ];
   return (
     <form onSubmit={submitHandler}>
       {!isFormClosed && (
         <div className="new-expense__controls">
           <div className="new-expense__control">
-            <label>Title</label>
+            <label>Наслов</label>
             <input
               type="text"
               value={enteredTitle}
@@ -45,17 +80,15 @@ const ExpenseForm = (props) => {
             />
           </div>
           <div className="new-expense__control">
-            <label>Amount</label>
-            <input
-              type="number"
-              min="0.01"
-              step="0.01"
-              value={enteredAmout}
-              onChange={amoutChangeHadler}
-            />
+            <label>Град</label>
+            <select value={props.select} onChange={amoutChangeHadler}>
+              {citiez.map((c) => (
+                <option value="c">{c}</option>
+              ))}
+            </select>
           </div>
           <div className="new-expense__control">
-            <label>Date</label>
+            <label>Датум</label>
             <input
               type="date"
               min="2019-01-01"

@@ -7,15 +7,51 @@ const ExpensesFilter = (props) => {
     props.onExpenseFilterChange(event.target.value);
   };
 
+  const citiez = [
+    "Берово",
+    "Битола",
+    "Богданци",
+    "Валандово",
+    "Велес",
+    "Виница",
+    "Гевгелија",
+    "Гостивар",
+    "Дебар",
+    "Делчево",
+    "Демир Капија",
+    "Демир Хисар",
+    "Кавадарци",
+    "Кичево",
+    "Кочани",
+    "Кратово",
+    "Крива Паланка",
+    "Крушево",
+    "Куманово",
+    "Македонска Каменица",
+    "Македонски Брод",
+    "Неготино",
+    "Охрид",
+    "Пехчево",
+    "Прилеп",
+    "Пробиштип",
+    "Радовиш",
+    "Ресен",
+    "Свети Николе",
+    "Скопје",
+    "Струга",
+    "Струмица",
+    "Тетово",
+    "Штип",
+  ];
+
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
-        <label>Filter by year</label>
+        <label>Избери град</label>
         <select value={props.select} onChange={dateChangeHandler}>
-          <option value="2022">2022</option>
-          <option value="2021">2021</option>
-          <option value="2020">2020</option>
-          <option value="2019">2019</option>
+          {citiez.map((c) => (
+            <option value="c">{c}</option>
+          ))}
         </select>
       </div>
     </div>
